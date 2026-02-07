@@ -1,4 +1,4 @@
-/* Basic Setup */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -32,7 +31,6 @@ body {
 .nav-links a { color: white; text-decoration: none; font-size: 0.9rem; transition: 0.3s; }
 .nav-links a:hover { color: #f39c12; }
 
-/* Hero Section */
 .hero {
     height: 70vh;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), #2c3e50;
@@ -56,14 +54,12 @@ body {
     font-weight: bold;
 }
 
-/* Common Section Styles */
 .section { padding: 80px 10%; }
 .container { max-width: 1000px; margin: auto; }
 .gray-bg { background: #f4f7f6; }
 h2 { font-size: 2rem; margin-bottom: 30px; text-align: center; color: #2c3e50; position: relative; }
 h2::after { content: ''; display: block; width: 50px; height: 3px; background: #f39c12; margin: 10px auto; }
 
-/* Cards & Grid */
 .card {
     background: white;
     padding: 25px;
@@ -100,8 +96,79 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .hero h1 { font-size: 2.5rem; }
-    .nav-links { display: none; } /* Mobile hide for simplicity */
+    .nav-links { display: none; } 
+}
+.client-form-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    border-top: 5px solid #f39c12;
+}
+
+.lead-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.form-field label {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 0.9rem;
+}
+
+.form-field input, 
+.form-field textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-field input:focus, 
+.form-field textarea:focus {
+    border-color: #f39c12;
+    box-shadow: 0 0 5px rgba(243, 156, 18, 0.2);
+}
+
+.form-field input:invalid:not(:placeholder-shown) {
+    border-color: #e74c3c;
+}
+
+.form-submit-btn {
+    background: #f39c12;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.form-submit-btn:hover {
+    background: #d35400;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(243, 156, 18, 0.3);
+}
+
+#approach h2 {
+    margin-bottom: 40px;
 }
