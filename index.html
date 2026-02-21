@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jagan Karunagaran | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
 
     <nav class="navbar">
         <div class="logo">JK</div>
+        
+        <input type="checkbox" id="menu-check">
+        <label for="menu-check" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -101,15 +108,13 @@
         <div class="container">
             <h2>Let's Train, Let's Build</h2>
             <div class="client-form-card">
-                <form class="lead-form" style="display: flex; flex-direction: column; gap: 20px;">
-                    <div class="form-field" style="display: flex; flex-direction: column;"><label>Full Name</label><input type="text" placeholder="Your Name" required></div>
-                    <div class="form-field" style="display: flex; flex-direction: column;"><label>Phone Number</label><input type="tel" placeholder="10-digit number" required></div>
-                    
-                    <div class="form-field" style="display: flex; flex-direction: column;"><label>Gmail</label><input type="email" placeholder="example@gmail.com" required></div>
-                    <div class="form-field" style="display: flex; flex-direction: column;"><label>City</label><input type="text" placeholder="Your Current City" required></div>
-                    <div class="form-field" style="display: flex; flex-direction: column;"><label>Purpose of Approach</label><input type="text" placeholder="e.g. Training, Project" required></div>
-                    
-                    <div class="form-field" style="display: flex; flex-direction: column;"><label>Brief Explanation</label><textarea rows="4" placeholder="Explain your requirement in detail..."></textarea></div>
+                <form class="lead-form">
+                    <div class="form-field"><label>Full Name</label><input type="text" placeholder="Your Name" required></div>
+                    <div class="form-field"><label>Phone Number</label><input type="tel" placeholder="10-digit number" required></div>
+                    <div class="form-field"><label>Gmail</label><input type="email" placeholder="example@gmail.com" required></div>
+                    <div class="form-field"><label>City</label><input type="text" placeholder="Your Current City" required></div>
+                    <div class="form-field"><label>Purpose of Approach</label><input type="text" placeholder="e.g. Training, Project" required></div>
+                    <div class="form-field"><label>Brief Explanation</label><textarea rows="4" placeholder="Explain your requirement in detail..."></textarea></div>
                     <button type="submit" class="form-submit-btn">Send Proposal</button>
                 </form>
             </div>
